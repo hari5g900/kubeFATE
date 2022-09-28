@@ -29,22 +29,29 @@ algorithm: Basic
 device: CPU
 
 ingress:
-  fateboard: 
+  fateboard:
+    nodeselector:
+      location: it 
     hosts:
     - name: party10000.fateboard.example.com
   client:  
+    nodeselector:
+      location: it
     hosts:
     - name: party10000.notebook.example.com
 
 rollsite: 
+  nodeselector:
+    location: it
   type: NodePort
   nodePort: 30101
-  partyList:
-    - partyId: 10000
-      partyIp: 192.168.122.167
-      partyPort: 30091
+  exchange: 
+    ip: 192.168.122.167
+    port: 30000
 
 python:
+  nodeselector:
+    location: it
   type: NodePort
   httpNodePort: 30107
   grpcNodePort: 30102

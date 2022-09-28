@@ -30,25 +30,29 @@ device: CPU
 
 ingress:
   fateboard:
+    nodeselector:
+      location: gb
     hosts:
     - name: party9999.fateboard.example.com
-  client:  
+  client:
+    nodeselector:
+      location: gb  
     hosts:
     - name: party9999.notebook.example.com
 
 rollsite:
+  nodeselector:
+    location: gb
   type: NodePort
   nodePort: 30091
-  partyList:
-    - partyId: 10000
-      partyIp: 192.168.122.234
-      partyPort: 30101
+  exchange:
+    ip: 192.168.122.167
+    port: 30000
 
 python:
+  nodeselector:
+    location: gb
   type: NodePort
   httpNodePort: 30097
   grpcNodePort: 30092
   logLevel: INFO
-
-servingIp: 192.168.122.234
-servingPort: 30095
