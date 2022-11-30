@@ -10,6 +10,11 @@ DURRATION=$((60 * 60 * 24))
 UPTIME=$(($(date +%s) - $START))
 
 while [[ $UPTIME < $DURRATION ]]; do
+    
+
+    ## Update running time
+    UPTIME=$(($(date +%s) - $START))
+
 
     ## Logic here...
     echo -n "Time remaining: "
@@ -20,8 +25,4 @@ while [[ $UPTIME < $DURRATION ]]; do
 
     ## Sleep for a bit
     sleep 300
-
-    ## Update running time
-    UPTIME=$(($(date +%s) - $START))
-
 done
