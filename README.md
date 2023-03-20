@@ -13,7 +13,7 @@ fate-10000.yml contains cluster config for party-10000.
 
 The first thing to do is to deploy the k8s cluster on your system. I recommend rancher (rke) as it is very easy to deploy and take down the cluster (single or multinode). Minikube is another alternative but it only really supports single node clusters.
 
-This tutorial follows the official kubefate deployment guide, [https://github.com/FederatedAI/KubeFATE/blob/master/docs/tutorials/Build_Two_Parties_FATE_Cluster_in_One_Linux_Machine_with_MiniKube.md].
+This tutorial follows the official kubefate deployment [guide](https://github.com/FederatedAI/KubeFATE/blob/master/docs/tutorials/Build_Two_Parties_FATE_Cluster_in_One_Linux_Machine_with_MiniKube.md).
 
 ## Setup Kubefate
 ### Install KubeFATE CLI
