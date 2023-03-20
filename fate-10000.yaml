@@ -46,7 +46,7 @@ rollsite:
   type: NodePort
   nodePort: 30101
   exchange: 
-    ip: 192.168.122.167
+    ip: 10.68.169.81
     port: 30000
 
 python:
@@ -57,5 +57,5 @@ python:
   grpcNodePort: 30102
   logLevel: INFO
 
-servingIp: 192.168.122.167
+servingIp: 10.68.169.81
 servingPort: 30105

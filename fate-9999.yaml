@@ -46,7 +46,7 @@ rollsite:
   type: NodePort
   nodePort: 30091
   exchange:
-    ip: 192.168.122.167
+    ip: 10.68.169.81
     port: 30000
 
 python:
